@@ -1,7 +1,30 @@
   <html>
   <head>
-  <style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Margin</title>
+<style>
+        /* Default margin for small screens */
+        .container {
+            margin: 10px;
+        }
 
+        /* Medium screens (tablets) */
+        @media (min-width: 768px) {
+            .container {
+                margin: 20px;
+            }
+        }
+
+        /* Large screens (desktops) */
+        @media (min-width: 1024px) {
+            .container {
+                margin: 40px;
+            }
+        }
   container {
 text-align: center;
 }
@@ -40,7 +63,7 @@ text-align: center;
   </center>   
 </div>
 
- <div class="all">
+ <div class="container">
     <p>:
     <pre style="word-wrap: break-word; white-space: pre-wrap;">
 FUCK THE INTERNET, FOR ALL ITS GOOD, IT HAS BECOME THE VILEST DISTRIBUTOR OF SICKNESS IMAGINABLE.
